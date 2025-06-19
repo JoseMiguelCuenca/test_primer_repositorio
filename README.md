@@ -7,6 +7,15 @@ Calculadora científica
 17/06/2025
 Validador de IPs
 
+18/06/2025
+Conversión ISBN (CodeWars)
+Suma de 2 números
+
+19/06/2025
+Filtro de palabrotas (censura de palabras)
+Cálculo de la nota media de un alumno
+Pasar todos los elementos de la lsita a minúscula.
+
 Ejercicios semanales:
-Programar el funcionamiento de un ascensor (Hight level)
+Programar el funcionamiento de un ascensor, sistema de comandos. (Hight level)
 Playlist de Python (Hight level)
