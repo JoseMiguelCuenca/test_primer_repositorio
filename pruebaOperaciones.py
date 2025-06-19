@@ -14,3 +14,6 @@ print(n1/n2)
 
 # Division entera
 print(n1//n2)
+
+# Operacion 3
+print(n1)
