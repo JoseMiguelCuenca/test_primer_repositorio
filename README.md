@@ -16,6 +16,9 @@ Filtro de palabrotas (censura de palabras)
 Cálculo de la nota media de un alumno
 Pasar todos los elementos de la lista a minúscula.
 
+23/06/2025
+Validación de Emails añadiendo tests de pruebas
+
 Ejercicios semanales:
 Programar el funcionamiento de un ascensor, sistema de comandos. (Hight level)
 Playlist de Python (Hight level)
