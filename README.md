@@ -3,41 +3,42 @@ En este repositorio se detallarán cada uno de los ejercicios planteados, las re
 
 16/06/2025
 
-Calculadora científica
+- Calculadora científica
 
 
 17/06/2025
 
-Validador de IPs
+- Validador de IPs
 
 
 18/06/2025
 
-Conversión ISBN (CodeWars)
+- Conversión ISBN (CodeWars)
 
-Suma de 2 números
+- Suma de 2 números
 
 
 
 19/06/2025
-Filtro de palabrotas (censura de palabras)
 
-Cálculo de la nota media de un alumno
+- Filtro de palabrotas (censura de palabras)
 
-Pasar todos los elementos de la lista a minúscula.
+- Cálculo de la nota media de un alumno
+
+- Pasar todos los elementos de la lista a minúscula.
 
 
 23/06/2025
 
-Validación de Emails añadiendo tests de pruebas
+- Validación de Emails añadiendo tests de pruebas
 
-Añadir datos a lista vacía y tratamiento
+- Añadir datos a lista vacía y tratamiento
 
 
 
-Ejercicios semanales:
+- Ejercicios semanales:
 
 Programar el funcionamiento de un ascensor, sistema de comandos. (Hight level)
 
-Playlist de Python (Hight level)
+- Playlist de Python (Hight level)
 
