@@ -37,6 +37,10 @@ En este repositorio se detallarán cada uno de los ejercicios planteados, las re
 - Base de datos de alumnos, edad, notas
 
 
+
+
+
+
 - Ejercicios semanales:
 
 Programar el funcionamiento de un ascensor, sistema de comandos. (Hight level)
