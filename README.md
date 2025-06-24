@@ -1,5 +1,9 @@
-# Ejercicios_semana_1 Desarrollador Python Tajamar
+# Ejercicios Curso Python Tajamar
 En este repositorio se detallarán cada uno de los ejercicios planteados, las respuestas indicadas y las soluciones propuestas con observaciones para la mejora del código.
+
+
+Semana 1
+
 
 16/06/2025
 
@@ -46,4 +50,10 @@ En este repositorio se detallarán cada uno de los ejercicios planteados, las re
 Programar el funcionamiento de un ascensor, sistema de comandos. (Hight level)
 
 - Playlist de Python (Hight level)
+
+Semana 2
+
+Ejercicio semanal:
+
+- Hacer un sistema que mida el tiempo de ejecución de una función (ejercicio avanzado)
 
