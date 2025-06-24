@@ -1,6 +1,5 @@
-'''Haced una funcion que le de dos colores de la escala cromatica (rojo, verde o azul) y me devuelva su mexcla
- 
-mezcla*
+'''
+Haced una funcion que le de dos colores de la escala cromatica (rojo, verde o azul) y me devuelva su mezcla
 amarillo = rojo + verde
 magenta= rojo + azul
 cian = azul + verde
