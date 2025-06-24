@@ -1,9 +1,17 @@
 '''# Función números:
-numeros = int(input("Indica la cantidad de números en los quieres aplicar cálculos: "))
+valores = int(input("Indica la cantidad de números en los quieres aplicar cálculos: "))
+numeros = []
 
-def entrada(numeros):
+def entrada(numeros): 
     for valores in numeros:
         input(f"Introduce el número {valores}: ")'''
+
+numero1 = float(input("Introduce el primer número: "))
+numero2 = float(input ("Introduce el segundo número: "))
+
+def operandos(numeros):
+    for valor in valores
+    operando = int(input("Indica el numero {valor}: "))
 
 numero1 = float(input("Introduce el primer número: "))
 numero2 = float(input ("Introduce el segundo número: "))
