@@ -20,10 +20,3 @@ def notaPromedio(resultados):
         contador=+1
     return (suma/len(resultados))
 '''
-nombres = ["JoaquIN","AnA","ClauDIA"]
-nombres_minuscula = []
-for posicion,nombre in enumerate(nombres):
-    a_minuscula = nombre.lower()
-    nombres_minuscula.append(a_minuscula)
-    
-print(nombres_minuscula)
