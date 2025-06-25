@@ -8,34 +8,34 @@ def entrada(numeros):
 
 numero1 = float(input("Introduce el primer número: "))
 numero2 = float(input ("Introduce el segundo número: "))
-
+'''
 def operandos(numeros):
-    for valor in valores
-    operando = int(input("Indica el numero {valor}: "))
-
+    for valor in valores:
+        operando = int(input("Indica el numero {valor}: "))
+'
 numero1 = float(input("Introduce el primer número: "))
 numero2 = float(input ("Introduce el segundo número: "))
-
+'''
 # Función suma
 def suma(numero1,numero2):
     return numero1+numero2
 calculo_suma = suma(numero1,numero2)
-print(calculo_suma)
+print(f"La suma de los números introducidos es {calculo_suma}")
 
 # Función resta
 def resta(numero1,numero2):
     return numero1-numero2
 calculo_resta = resta(numero1,numero2)
-print(calculo_resta)
+print(f"La resta de los números introducidos es {calculo_resta}")
 
 # Función multiplicacion
 def producto(numero1,numero2):
     return numero1 * numero2
 calculo_producto = producto(numero1,numero2)
-print(calculo_producto)
+print(f"La multiplicación de los números introducidos es {calculo_producto}")
 
 # Función división:
 def division (numero1,numero2):
     return numero1/numero2
 calculo_division = division(numero1,numero2)
-print(calculo_division)
+print(f"La división de los números introducidos es {calculo_division}")
