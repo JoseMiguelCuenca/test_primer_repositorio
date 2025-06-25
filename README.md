@@ -55,5 +55,25 @@ Semana 2
 
 Ejercicio semanal:
 
+24/06/2025
+
+- Funciones con GET/POST/DELETE/PUT
+
+- Funciones y calculadora de funciones
+
+
+25/06/2025
+
+- Crear una clase (Mascota)
+- Crear una clase con un método
+- Crear la clase personaje y hacer que combatan entre ellos (mediante métodos)
+- Crear clase persona y conduce un coche
+
+  Ejercicio semanal:
+
 - Hacer un sistema que mida el tiempo de ejecución de una función (ejercicio avanzado)
 
+  Objetivo semanal:
+Ordenación de Ramas
+Actualización ejercicios clases 1-8
+Apuntes 1-8 y síntesis 1-8 (Hojas de consulta)
