@@ -1,11 +1,11 @@
 # Ejercicio: Crea una base de datos con nombre, edad, notas
 
-asignaturas = [{"id_asignatura":2 , "nombre":"Matemáticas"},
+asignaturas = [{"id_asignatura": 2, "nombre":"Matemáticas"},
                {"id_asignatura": 5, "nombre":"Álgebra"},
-               {"id_asignatura": 4 , "nombre":"Estadística"},
-               {"id_asignatura":6 , "nombre":"Programación con Python para Data Science"},
-               {"id_asignatura": 3 , "nombre":"Fundamentos de programación en Python"},
-               {"id_asignatura": 1 , "nombre":"Algoritmos"}]
+               {"id_asignatura": 4, "nombre":"Estadística"},
+               {"id_asignatura": 6, "nombre":"Programación con Python para Data Science"},
+               {"id_asignatura": 3, "nombre":"Fundamentos de programación en Python"},
+               {"id_asignatura": 1, "nombre":"Algoritmos"}]
 
 alumnos = [
             {"Nombre":"David", "apellido1":"Gonzalez", "apellido2": "Ramirez", "edad": 30},
@@ -14,6 +14,19 @@ alumnos = [
             {"Nombre":"Felipe", "apellido1":"Puig", "apellido2": "Puyol", "edad": 25}]
 
 #Pendiente:
+# Medias por alumno
+# Crear a base de introducir notas:
+''' EJEMPLO PROFESOR:
+datos = int(input("Dime la cantidad de notas que quieres registrar de un alumno"))
+alumnos = {}
+nombre = input("Dame un nombre: ")
+edad = input("Dime usu edad: ")
+notas = []
+for indice in range(datos):
+    notas.append(float(input("Dime su nota: ")))
+alumnos[nombre] = {"edad": edad, "notas": notas}
+print(alumnos)
+'''   
 
 '''Matricuaciones la generaremos como resultado de alumnos y asignaturas, haremos un recorrido de 
 ambos diccionarios y de forma aleatoria generaré el diccionario de matriculaciones'''
@@ -35,5 +48,4 @@ base_datos = {}
 num_alumnos = int(input("Dime cuantos alumnos quieres que tenga la base de datos: "))
 num_asignaturas = int(input("Dime cuantas asignaturas quieres que tenga la base de datos: "))
 num_cursos = int(input("Dime cuantos cursos quieres que tenga la base de datos: "))
-
 '''
