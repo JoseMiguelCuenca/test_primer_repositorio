@@ -5,7 +5,7 @@ numeros= []
 for i in range(valores):
     num = float(input(f"Introduce el número {i+1} con el que quieres aplicar los cálculos: "))
     numeros.append(num)
-print(numeros)
+print(numeros) #Checkpoint OK, se guarda en la variable numeros en forma de lista. luego pasaremos el argumento como *numeros en las funciones para el desempaquetado.
 
 #PENDIENTE: A partir de aqui la lista de numeros se tiene que desempaquetar en las funciones de operaciones.
 '''

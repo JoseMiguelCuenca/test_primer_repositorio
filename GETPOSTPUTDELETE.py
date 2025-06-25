@@ -8,19 +8,32 @@ un sistema renderizado (render) que me resuelva cierta logica para esas urls'''
     return f"Haciendo GET a {url}", 200
 '''
 # Definición de los datos (de forma general, sin métodos concretos para URLs)
-direcciones = {}
+direcciones = {url:}
 
-def GET(direccion_url): # Seleccion de una URL
-    dirreccion_url = "f{valor}"
-    seleccion = direccion_url
-    return seleccion
+# Diccionario que guarda los libros con la URL de datos
+datos = {"Libro": direccion_url}
 
-def POST(nuevo_contenido, direccion_url): # Creación de nuevo libro
-    datos =  {"LibroNuevo":direccion_url}
+def enrutado(metodo,direccion_url):
+    "La función registra la direccion URL con su método y contenido"
+    metodo = metodo.upper()
+    if direccion_url not in direcciones:
+        direcciones[url] = {}
+        direcciones[url][metodo] = contenido
+    else:
+       print(f"Dirección {} registrada")
+
+def GET(direccion_url): # Seleccion de una URL, está completado
+    if dirreccion_url in direcciones:
+        return direcciones[direccion_url]
+    else:
+        print("Error 404, dirección no encontrada")
+
+def POST(nuevo_contenido, direccion_url): # Creación de nuevo libro, está completado.
+    if dirreccion_url not in direcciones:
+        direcciones[direccion_url]
     nuevo_contenido = datos.fromkeys("LibroNuevo":direccion_url)
 
-def router():  # 1 - Guarde mis urls + verbos
+def put():  # 1 - Guarde mis urls + verbos 3 falta terminar, a tener en cuenta que el diccionario es datos
     return
 
-def render():  # Aplica funcion a esa url+verbo SI EXISTE
-    return
+def delete(): # - Elimina los datos de ese libro #falta terminar
