@@ -74,6 +74,8 @@ Apuntes 1-8 y síntesis 1-8 (Hojas de consulta)
 
 
 Ejercicios semanales(Avanzados):
+
+
 · 0: Calculadora
 · 1: Simular el funcionamiento de un ascensor, sistema de comandos. 
 · 2: Hacer un sistema que mida el tiempo de ejecución de una función.
