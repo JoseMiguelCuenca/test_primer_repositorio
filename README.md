@@ -32,6 +32,11 @@ Semana 1
 - Pasar todos los elementos de la lista a minúscula.
 
 
+
+
+Semana 2
+
+
 23/06/2025
 
 - Validación de Emails añadiendo tests de pruebas
@@ -41,19 +46,6 @@ Semana 1
 - Base de datos de alumnos, edad, notas
 
 
-
-
-
-
-- Ejercicios semanales:
-
-Programar el funcionamiento de un ascensor, sistema de comandos. (Hight level)
-
-- Playlist de Python (Hight level)
-
-Semana 2
-
-Ejercicio semanal:
 
 24/06/2025
 
@@ -69,7 +61,7 @@ Ejercicio semanal:
 - Crear la clase personaje y hacer que combatan entre ellos (mediante métodos)
 - Crear clase persona y conduce un coche
 
-  Ejercicio semanal:
+  Ejercicio semana2:
 
 - Hacer un sistema que mida el tiempo de ejecución de una función (ejercicio avanzado)
 
@@ -77,3 +69,10 @@ Ejercicio semanal:
 Ordenación de Ramas
 Actualización ejercicios clases 1-8
 Apuntes 1-8 y síntesis 1-8 (Hojas de consulta)
+
+
+- Ejercicios semanales(Avanzados):
+0: Calculadora
+1: Simular el funcionamiento de un ascensor, sistema de comandos. 
+2: Hacer un sistema que mida el tiempo de ejecución de una función.
+3: Creación de una playlist
