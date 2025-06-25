@@ -1,4 +1,4 @@
-def concatenar(inicio, nudo, desenlace):
+'''def concatenar(inicio, nudo, desenlace):
     return inicio+nudo+desenlace
 
 contexto = {"inicio": "Habia una vez...\n",
@@ -12,3 +12,6 @@ def dolar_a_euros(dolares:float) -> str:
     ...
     return()
 print(dolar_a_euro)
+'''
+valores = 1,2,3,4,5
+range(valores)
