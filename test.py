@@ -12,6 +12,8 @@ def dolar_a_euros(dolares:float) -> str:
     ...
     return()
 print(dolar_a_euro)
-'''
+
 valores = 1,2,3,4,5
-range(valores)
+range(valores)'''
+
+print(Exception)

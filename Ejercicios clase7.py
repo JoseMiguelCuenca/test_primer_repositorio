@@ -21,7 +21,7 @@ gato = Mascota("Gato","Europeo","7 vidas") # Creo la instancia Gato, generando u
 print(gato.animal)
 print(gato.raza)
 print(gato.vidas)'''
-'''# *****EJERCICIO 2*****
+# *****EJERCICIO 2*****
 # =====Crear dos personajes y un combate entre ambos===========================
 # (pasos para llevarlo a cabo):
 #======1. Crear una clase Personaje OK=========================================
@@ -30,13 +30,13 @@ print(gato.vidas)'''
 #=======4. Ver como se pegan entre si, tal vez uno muera!======================
 #=====correccion a aplicar: (Método: funciones dentro de la clase!)============
 
-combatientes = []
+combatientes = [] #Cambiar a diccionario para poder poner clave-valor e invocar el método combate a los combatientes seleccionados en el método seleccion_personajes_combate
 
 class Personaje:
     def __init__(self, nombre: str,
                  ataque: int, 
                  defensa: int, 
-                 vida: int): # __init__Es el metodo constructor)
+                 vida: int): # __init__ Es el metodo constructor)
         self.nombre = nombre
         self.ataque = ataque
         self.defensa = defensa
@@ -45,31 +45,63 @@ class Personaje:
         print(f"Se ha creado a {self.nombre}, con ataque {self.ataque}, defensa {self.defensa}, {self.vida} puntos de vida, y está listo para luchar! ")
     
     def seleccion_personajes_combate(self): # Un par de inputs que nos hacen elegir los personajes a combatir, argumentos solo self (lo que uso fuera del metodo)
-        luchador_1 = input("Introduce el nombre del primer luchador: ")
-        if luchador_1 not in combatientes:
+        personaje_1 = input("Introduce el nombre del primer luchador: ")
+        if personaje_1 not in combatientes:
             return "El personaje no ha sido creado, créalo como luchador antes de iniciar un combate con él"
         else:
-            luchador_2 = input("Introduce el nombre del segundo luchador: ")
-            if luchador_2 in combatientes:
-                return "Los dos luchadores están preparados, que comience el combate!"
+            personaje_2 = input("Introduce el nombre del segundo luchador: ")
+            if personaje_2 in combatientes:
+                print("Los dos luchadores están preparados, que comience el combate!")
+                luchador_1 = combatientes[Personaje.nombre] # Falta aplicar corrección de combatientes (comentario lin.33)
+                luchador_2 = combatientes[Personaje.nombre] # Falta aplicar corrección de combatientes (comentario lin.33)
+                return luchador_1.combate(luchador_2)
                 # En este punto añadiré más adelante que no se puede seleccionar el combatiente seleccionado como luchador_1 +
                 # dado que un personaje no debería poder luchar contra sí mismo!
             else:
                 return "El segundo personaje no ha sido creado, créalo como luchador antes de iniciar un combate con él"
+    def combate(self, oponente):
+        atacante = self
+        defensor = oponente
+        turno = 0 # Punto de partida del combate
+        #Dinámica de combate cuando en cada turno ambos tienen vida
+        while atacante.vida > 0 and defensor.vida > 0:
+            if turno % 2 ==0:
+                daño = atacante.ataque - defensor.defensa # Implementar mensaje cuando la defensa es superior al ataque (=0 y no le ha hecho un rasguño, por ejemplo)
+                defensor.vida -= daño
+                print(f"{atacante.nombre} ataca a {defensor.nombre} y reduce su vida a {defensor.vida}")
+                #Comprobamos si la vida ha llegado a 0 en los personajes (def resultado_combate). Debe parar si es así
+            else:
+                daño = defensor.ataque - atacante.defensa
+                atacante.vida -=daño # Implementar mensaje cuando la defensa es superior al ataque (=0 y no le ha hecho un rasguño, por ejemplo)
+                print(f"{defensor.nombre} ataca a {atacante.nombre} y reduce su vida a {atacante.vida}")
+                #Comprobamos si la vida ha llegado a 0 en los personajes (def resultado_combate). Debe parar si es así
+            turno+=1
+    def resultado_combate(self,oponente):   #Finalización de combate, casuísticas (Hacerlo en un método distinto, lógica de cuando uno muere)
+        
+        '''LOGICA ANTERIOR
+        if atacante.vida <=0 and defensor.vida <=0:
+            print("¡Tras acabar la ronda se ha producido un empate! ¡Ningun luchador ha quedado en pie!")   
+        elif atacante.vida > 0 and defensor.vida <=0:
+            print (f"Tenemos al ganador! {atacante.nombre} se ha hecho con la victoria!")
+        else:
+            print (f"Tenemos al ganador! {defensor.nombre} se ha hecho con la victoria!")'''
+        
 # Creación de dos instancias (dos posibles combatientes)
 Thor = Personaje ("Thor",12,8,60)
 Hulk = Personaje ("Hulk", 15,5,85)
 # Checkpoint (OK)
 print(combatientes)
 # Checkpoint2 (OK)
-# No entiendo por que le tengo que llamar desde Thor, si quiero que sea una opcion de interacción para iniciarla
+# No entiendo por que le tengo que llamar desde Thor, si quiero que sea una opción de interacción para iniciarla
 # Cuando quiera, sin necesidad de llamar a una instancia
+# Checkpoint combate (falta finalizar la llamada a combate desde seleccion_personajes_combate)
+
 Combate = Thor.seleccion_personajes_combate()
 print(Combate)
-    # Pendiente separar el método de selección del de validación
-    
+    # Pendiente separar del método de selección la validación con otro método
+    """
     def validar_personajes(self): # Comprobar que se han creado y su nombre está en combatientes
-    """   ...
+       ...
        idea:
        # inicioestructuraidea
        def seleccion_personajes_combate():
@@ -85,22 +117,9 @@ print(Combate)
             return
         # finestructuraidea
         """
-    def combate(self, atacante: Personaje, defensor: Personaje): 
-            #Dinámica del combate, he indicar las clases ya que utilizaré los atributos que la contienen
-        ...
-    
-    def combate(atacante: Personaje, defensor: Personaje):
-        turno = 0
-        while atacante.vida > 0 and defensor.vida > 0:
-            if turno % 2 == 0: # turno del atacante
-                daño = (atacante.ataque - defensor.defensa)
-                defensor.vida =- daño
-                print(f"{atacante.nombre} ataca a {defensor.nombre} y reduce su vida a {defensor.vida}")
-            else: #turno del defensor
-                daño = defensor.ataque - atacante.defensa
-                atacante.vida=-daño
-                print(f"{defensor.nombre} ataca a {atacante.nombre} y reduce su vida a {atacante.vida}")
-            turno=+1
+    def finalizar_combate(self, atacante: Personaje, defensor: Personaje):
+        self, atacante, defensor = combatir # Quiero desempaquetar el método combate para utilizar
+            # Resultado del combate, si se da alguno de estos dos sucesos (cuando la vida llegue a 0, el combate ha de finalizar)
         if atacante.vida <= 0 and defensor.vida <=0:
             print("Empate! Ambos combatientes han caído en el mismo turno!")
         elif atacante.vida <= 0:
@@ -108,8 +127,22 @@ print(Combate)
         else:
             print(f"{atacante.nombre} ha ganado el combate!")
     
+    def combatir(self, atacante: Personaje, defensor: Personaje):
+        # Dinámica del combate, e indicar las clases ya que utilizaré los atributos que la contienen
+        turno = 0
+        while atacante.vida > 0 and defensor.vida > 0:
+            if turno % 2 == 0: # turno del atacante
+                daño = (atacante.ataque - defensor.defensa)
+                defensor.vida -= daño
+                print(f"{atacante.nombre} ataca a {defensor.nombre} y reduce su vida a {defensor.vida}")
+            else: #turno del defensor
+                daño = defensor.ataque - atacante.defensa
+                atacante.vida-=daño
+                print(f"{defensor.nombre} ataca a {atacante.nombre} y reduce su vida a {atacante.vida}")
+            turno+=1
+    
 seleccion_personajes_combate()
-'''
+
 '''# *****EJERCICIO 3*****
 #====Crear un coche======================================================
 #====Crear una persona===================================================
@@ -140,3 +173,5 @@ class Alumno(): # Dataclase
         nombre_curso.curso = "Python"
 
 Alumno1 = Alumno(nombre="José Miguel", apellido1 ="Cuenca",apellido2 ="Fernández", edad=34, curso="Python")'''
+
+print(Personaje)
