@@ -65,11 +65,10 @@ print(combatientes)
 # Checkpoint2 (OK)
 '''No entiendo por que le tengo que llamar desde Thor, si quiero que sea una opcion de interacción para iniciarla
 Cuando quiera, sin necesidad de llamar a una instancia'''
-
 Combate = Thor.seleccion_personajes_combate()
 print(Combate)
+    # Pendiente separar el método de selección del de validación 
 
-    # Pendiente separar la funcionalidad de selección de la de validación 
 '''
     def validar_personajes(self): # Comprobar que se han creado y su nombre está en combatientes
        ...
@@ -89,24 +88,10 @@ print(Combate)
         # finestructuraidea
         '''
 
-    
-
-
-
-
-
-'''    def combate(self, atacante: Personaje, defensor: Personaje): 
-        #Dinámica del combate, he indicar las clases ya que utilizaré los atributos que la contienen
-    ...
+    def combate(self, atacante: Personaje, defensor: Personaje): 
+            #Dinámica del combate, he indicar las clases ya que utilizaré los atributos que la contienen
+        ...
 '''
-
-
-
-
-
-
-
-
 '''def combate(atacante: Personaje, defensor: Personaje):
     turno = 0
     while atacante.vida > 0 and defensor.vida > 0:
